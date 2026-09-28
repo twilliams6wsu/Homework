@@ -45,7 +45,7 @@ import turtle
 def initials(letter1, letter2):
     """Draw two initials side by side using straight lines."""
     t = turtle.Turtle()
-    t.speed(20)
+    t.speed(3)
     t.pensize(3)
     # Draw letter1 on the left side (around x = -80)
     # YOUR CODE HERE
@@ -143,7 +143,7 @@ def checkerboard(squares, size):
 def star(points, size, color="gold"):
     """Draw a filled star and two more at different positions."""
     t = turtle.Turtle()
-    t.speed(6)
+    t.speed(3)
     # YOUR CODE HERE
     t.penup()
     t.goto(-100,100)
@@ -193,7 +193,6 @@ def draw_snowflake(size):
             t.left(60)                
             t.backward(size * 2 / 3)   
             t.right(60)
-    turtle.done()
 
 
 # ── PART 2: Boolean Logic (55 points) ───────────────────────
@@ -234,7 +233,7 @@ def draw_snowflake(size):
 #   is_holiday(...)              → depends on your choices
 
 def is_right_triangle(a, b, c):
-    return (a ** 2) + (b ** 2) == c
+    return (a ** 2) + (b ** 2) == c ** 2
 
 
 
@@ -254,7 +253,6 @@ def is_holiday(month, day):
         return holidays[month] == day
     except:
         return False
-    pass
 
 
 # ── Exercise 6  —  if / elif / else  [20 pts] ───────────────
@@ -315,8 +313,24 @@ def fizzbuzz(n):
 #   parking_cost(10, True)   → $15.00
 
 def parking_cost(hours, is_weekend):
+    cost = 0.00
     if hours < 0:
         print("Invalid hours")
+    elif hours == 0:
+        cost = 2.00
+    elif hours <= 1:
+        cost = 2.00
+    elif hours <=3:
+        cost = 5.00
+    elif is_weekend and hours > 3:
+        cost = 15.00
+    elif hours <= 8:
+        cost = 10.00
+    else:
+        cost = 20.00
+    return f"${cost}"
+
+
 
 
 # ── Run all exercises ────────────────────────────────────────
