@@ -1,0 +1,9 @@
+Notebook,3
+Pens (box of 10),1
+USB cable,8
+Highlighters,5
+Sticky notes,14
+Stapler,3
+Desk lamp,0
+Binder clips,20
+Scissors,6

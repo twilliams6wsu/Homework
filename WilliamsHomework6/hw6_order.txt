@@ -1,0 +1,7 @@
+Notebook,3.50,4
+Pens (box of 10),4.25,2
+USB cable,8.99,3
+Highlighters,2.75,5
+Sticky notes,1.60,10
+Stapler,12.40,1
+Desk lamp,24.95,1

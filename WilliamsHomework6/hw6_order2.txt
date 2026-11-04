@@ -1,0 +1,10 @@
+# Order for Friday
+Stapler,12.40,1
+Desk lamp,24.95
+Highlighters,2.75,five
+Sticky notes,1.60,10
+USB cable,abc,3
+# the next line is a special order
+Laminator,89.00,1
+Notebook,3.50,4.5
+Binder clips,0.99,6
