@@ -8,6 +8,12 @@ available_orders = [
     "order_one.txt",
     "order_two.txt",
 ]
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
 last_receipt_file_name = "last_receipt.txt"
 receipt_history_file_name = "receipt_history.txt"
 sales_log_file_name = "sales_log.txt"
@@ -33,8 +39,8 @@ restock_dictionary = {
 #TODO: PART 2 COMPLETE HERE
 def userChooseOrderFile():
     while True:
-        # raw_input = input("Order file (with .txt):").lower()
-        raw_input = "order_one.txt"
+        raw_input = input("Order file (with .txt):").lower()
+        #raw_input = "order_one.txt"
         if raw_input in available_orders:
             break
         elif raw_input not in available_orders:
