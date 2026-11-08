@@ -1,0 +1,4 @@
+FORMAT: 'item to restock' : count
+
+Notebook : 1
+Pens (box of 10) : 1

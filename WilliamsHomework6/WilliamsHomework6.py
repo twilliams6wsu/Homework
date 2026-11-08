@@ -224,6 +224,7 @@ def producingRestockFile():
         file.write("\n")
         for item_name, item_count in restock_dictionary.items():
             file.write(f"{item_name} : {item_count}\n")
+    print(f"Check {restock_file_name} for items that should be restocked!")
 
 
 
